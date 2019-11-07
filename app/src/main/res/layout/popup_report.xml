@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="320dp"
+            android:layout_height="230dp"
+            android:background="@drawable/ic_borderline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="신고사유를 적어주세요"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:textSize="20dp" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/textView"/>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      app:layout_constraintTop_toBottomOf="@+id/textView"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      android:layout_marginEnd="15dp"
+                      app:layout_constraintStart_toStartOf="parent"
+                      android:layout_marginStart="15dp"
+                      app:layout_constraintBottom_toBottomOf="parent"
+                      android:layout_marginBottom="45dp"
+                      android:layout_marginTop="55dp"
+                      android:background="@drawable/ic_report_borderline">
+            <EditText
+                    android:id="@+id/report_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top"
+                    android:textSize="15dp"
+                    android:privateImeOptions="defaultInputmode=korean"
+                    android:background="@null"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent" android:layout_height="45dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:weightSum="5">
+            <View android:layout_width="0dp"
+                  android:layout_height="1dp"
+                  android:layout_weight="2"/>
+            <android.support.constraint.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3">
+                <Button
+                        android:text="신고하기"
+                        android:textSize="12dp"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/report_cancel"
+                        android:id="@+id/report" app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginEnd="20dp"/>
+                <Button
+                        android:text="취소하기"
+                        android:textSize="12dp"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/report_report"
+                        android:id="@+id/cancel" android:layout_marginBottom="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="20dp" app:layout_constraintEnd_toStartOf="@+id/report"/>
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

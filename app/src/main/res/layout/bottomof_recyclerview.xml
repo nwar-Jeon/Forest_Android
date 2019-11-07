@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/endless_scroll_iv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/veryRight"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+    <ImageView
+            android:layout_marginTop="13dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_maple"
+            android:layout_gravity="center"/>
+</LinearLayout>
